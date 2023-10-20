@@ -1,0 +1,17 @@
+@import url('./functions.scss');
+
+/* Breakpoints:
+ * ======================================================================== */
+
+// Mobile:
+$screen-zero: rempx(0px);
+$screen-xsm: rempx(280px); // Galaxy Fold
+
+// Tablet:
+$screen-sm: rempx(576px);
+$screen-md: rempx(768px);
+
+// Desktop:
+$screen-lg: rempx(992px);
+$screen-xl: rempx(1200px);
+$screen-xxl: rempx(1400px);

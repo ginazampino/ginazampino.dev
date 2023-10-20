@@ -1,0 +1,21 @@
+@import './colors.scss';
+
+/* Gradients:
+ * ======================================================================== */
+
+// Glow:
+$gradient--glow: linear-gradient(
+    to right top,
+    $color-accent--ivory,
+    $color-accent--aqua,
+    $color-accent--lavender,
+    $color-accent--aqua,
+    $color-accent--ivory
+);
+
+// Solid:
+$gradient--solid: linear-gradient(
+    to right,
+    $color-accent--indigo,
+    $color-accent--lavendar
+);

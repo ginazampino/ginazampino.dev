@@ -1,0 +1,6 @@
+/* Function: Convert pixels to rems
+ * ======================================================================== */
+
+@function rempx($size) {
+    @return calc($size / 16px) * 1rem;
+}
