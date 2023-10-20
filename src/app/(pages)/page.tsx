@@ -1,17 +1,12 @@
 import Image from 'next/image';
-import styles from './page.module.css';
+import styles from './page.module.scss';
+import Navigation from '@/components/Navigation/Navigation';
 
 export default function Home() {
     return (
-        <main className={styles.main}>
-            {/* <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-            /> */}
-        </main>
+        <>
+            <Navigation />
+            <main className={styles.home}></main>
+        </>
     );
 }

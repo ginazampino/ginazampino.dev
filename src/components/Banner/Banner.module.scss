@@ -1,0 +1,46 @@
+/* Banner: Promotion banner at the top of the page
+ * ======================================================================== */
+
+@import '../../styles/functions.scss';
+@import '../../styles/mixins.scss';
+@import '../../styles/gradients.scss';
+
+.banner {
+    @include flex(center, center, row);
+
+    background-image: $gradient--solid;
+    color: $color--white;
+    padding: rempx(10px);
+    text-shadow: 0px 1px 1px rgba($color--black, 0.35);
+    width: 100%;
+}
+
+.banner_content {
+    @include flex(center, flex-start, row);
+    @include layout(1200px);
+
+    a {
+        font-weight: 400;
+        margin-left: rempx(10px);
+        border-bottom: 2px solid white;
+        box-shadow: 0px 1px 1px rgba($color--black, 0.1);
+
+        &:hover {
+            border-color: transparent;
+            box-shadow: none;
+        }
+    }
+}
+
+.banner_tag {
+    @include flex(center, center, row);
+    background-color: $color--white;
+    border-radius: rempx(20px);
+    box-shadow: 0px 1px 1px rgba($color--black, 0.1);
+    color: $color-accent--indigo;
+    font-size: rempx(14px);
+    font-weight: 700;
+    margin-right: rempx(10px);
+    padding: rempx(2px) rempx(10px);
+    text-shadow: none;
+}
